@@ -1505,7 +1505,7 @@ class BaseExplainer(ABC):
         importances_df = self.get_importances_df(kind=kind, topx=topx, pos_label=pos_label)
         if kind=='shap':
             if self.target: 
-                title = f"Average impact on predicted"
+                title = f"Average impact on predicted {self.target}"
             else:
                 title = 'Average impact on prediction {self.target}<br>(mean absolute SHAP value)' 
                 
