@@ -34,8 +34,8 @@ from dash import Dash, callback, html, dcc, dash_table, Input, Output, State, MA
 
 data = pd.read_excel('Data.xlsx', sheet_name="2011_insecurity").dropna()
 
-X = data.drop(['Headline', 'Date'], axis=1)
-y = data['Headline']
+X = data.drop(['Headline Inflation', 'Date'], axis=1)
+y = data['Headline Inflation']
 
 
 #y=pd.DataFrame(data.target,columns=["target"])
