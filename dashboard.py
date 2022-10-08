@@ -223,7 +223,7 @@ from dash_bootstrap_components.themes import CYBORG,PULSE,DARKLY
 db=ExplainerDashboard(explainer, [CustomModelTab, CustomModelTab1, CustomPredictionsTab,
                                CustomPredictionsTab2, CustomPredictionsTab3, CustomPredictionsTab4], 
                         title='Inflation Explainer Dasboard for Nigeria', header_hide_selector=False,
-                        bootstrap=CYBORG).run()
+                        bootstrap=CYBORG)
 
 
 
